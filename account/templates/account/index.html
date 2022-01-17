@@ -1,0 +1,29 @@
+{% extends "home/base.html" %}
+{% load static %}
+{% block styling %}
+    <link rel="stylesheet" type="text/css" href="{% static "account/index.css" %}">
+{% endblock styling %}
+{% block content %}
+    {% if user.is_active %}
+        {% include "account/profile.html" %}
+    {% else %}
+        <div class="all">
+            <a href="{% url "login"%}">
+                <div class="card left">
+                    <h1>Se connecter</h1>
+                    <p>
+                        Si vous avez déjà un compte, vous pouvez vous connecter.
+                    </p>
+                </div>
+            </a>
+            <a href="{% url "signup" %}">
+                <div class="card right">
+                    <h1>S'inscrire</h1>
+                    <p>
+                        Si vous n'avez pas encore de compte, vous pouvez vous inscrire
+                    </p>
+                </div>
+            </a>
+        </div>
+    {% endif %}
+{% endblock %}

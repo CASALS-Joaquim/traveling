@@ -1,0 +1,16 @@
+{% extends "home/base.html" %}
+{% load static %}
+{% block styling %}
+    <link rel="stylesheet" type="text/css" href="{% static "destinations/add.css" %}">
+{% endblock styling %}
+{% block content %}
+    <div class="all">
+        <div class="card">
+            <form action="{% url "add_country" %}" method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <input type=submit value="Ajouter un pays">
+            </form>
+        </div>
+    </div>
+{% endblock content %}

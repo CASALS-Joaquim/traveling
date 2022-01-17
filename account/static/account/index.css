@@ -1,0 +1,41 @@
+body {
+    background-color: #001;
+    background-image: linear-gradient(rgba(0, 0, 1, 0.4), rgba(0, 0, 1, 0.3)), url("./img/town\ by\ night.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+
+.all {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15%;
+    margin-left: 15%;
+}
+
+.card {
+    display: block;
+
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-left: 4%;
+    padding-right: 4%;
+    width: 90%;
+    background-image: linear-gradient(rgba(0, 0, 1, 0.6), rgba(0, 0, 1, 0.5));
+}
+
+.card.left {
+    margin-right: 10%;
+}
+
+.card.right {
+    margin-left: 10%;
+}
+
+a, a>div, a>div>p {
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+}

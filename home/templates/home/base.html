@@ -1,0 +1,26 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charsey="utf-8">
+        <title>Un site de voyage</title>
+        <link rel="stylesheet" type="text/css" href="{% static "home/style.css" %}">
+        {% block styling %}{% endblock styling %}
+    </head>
+    <body>
+        <nav class="menu">
+            <div>
+                <a href="{% url 'destinations' %}">Destinations</a>
+            </div>
+            <div>
+                <a href="{% url 'account' %}">Compte</a>
+            </div>
+            <div>
+                <a href="{% url 'index' %}">Accueil</a>
+            </div>
+        </nav>
+        {% block content %}{% endblock content %}
+        <script src="{% static "home/script.js" %}"></script>
+    </body>
+</html>

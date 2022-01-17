@@ -1,0 +1,12 @@
+{% extends "home/base.html" %}
+{% load static %}
+{% block styling %}
+    <link rel="stylesheet" type="text/css" href="{% static "account/profile.css" %}">
+{% endblock styling %}
+{% block content %}
+    <div class="card">
+        <p>{{ user.username }}</p>
+        <p>{{ user.email }}</p>
+        <a href="{% url "logout" %}">Se déconnecter</a>
+    </div>
+{% endblock content %}

@@ -1,0 +1,17 @@
+{% extends "./base.html" %}
+{% load static %}
+{% block styling %}
+    <link rel="stylesheet" type="text/css" href="{% static "home/index.css" %}">
+{% endblock styling %}
+{% block content %}
+    <div class="all">
+        <div class="card">
+            <h1>Où voudriez-vous voyager ?</h1>
+            <p>
+                Un ensemble d'incroyables destinations, une liste des plus beaux
+                spots touristiques, avec un effort pour faire valoir les coins
+                atypiques, tout aussi intéressants que leurs homologues plus connus.
+            </p>
+        </div>
+    </div>
+{% endblock content %}

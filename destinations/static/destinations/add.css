@@ -1,0 +1,41 @@
+body {
+    background-color: #001;
+    background-image: linear-gradient(rgba(0, 0, 1, 0.6), rgba(0, 0, 1, 0.7)), url("./img/pretty\ night.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+
+div.card {
+    box-sizing: border-box;
+    background-image: linear-gradient(rgba(0, 0, 1, 0.6), rgba(0, 0, 1, 0.5));
+    padding-top: 20%;
+    padding-bottom: 25%;
+    padding-left: 20%;
+    padding-right: 20%;
+    width: max-content;
+}
+
+div.all {
+    box-sizing: border-box;
+    display: block;
+    position: fixed;
+    top: 15%;
+    left: 30%;
+    width: 30%;
+}
+
+input, textarea, select, option {
+    display: block;
+    border-color: #000;
+    border-radius: 5px;
+    font-size: 1.25em;
+    height: 2%;
+    width: 100%;
+    font-family: Helvetica;
+    color: #000;
+}
+
+h1 {
+    text-align: center;
+}

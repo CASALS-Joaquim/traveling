@@ -1,0 +1,28 @@
+{% extends "home/base.html" %}
+{% load static %}
+{% block styling %}
+	<link rel="stylesheet" type="text/css" href="{% static "destinations/index.css" %}">
+{% endblock styling %}
+{% block content %}
+	<div class="all">
+		<div class="card">
+			<div class="destinations">
+				{% for destination in destinations %}
+					<a class="item" href="{% url "detail" destination.id %}"
+						style="background-size:cover;background-image: linear-gradient(rgba(0, 0, 1, 0.5), rgba(0, 0, 1, 0.6)),
+							url({{ destination.photo.url }});">
+						<h1>{{ destination.name | title }}</h1>
+						<h2>{{ destination.country.name | title }} </h2>
+						<p>{{ destination.introduction | truncatechars_html:150 }}</p>
+					</a>
+				{% endfor %}
+			</div>
+			<div class=links>
+				<a href="{% url "add_destination" %}"> Ajouter une destination </a>
+			</div>
+			<div class=links>
+				<a href="{% url "add_country" %}">Ajouter un pays</a>
+			</div>
+		</div>
+	</div>
+{% endblock content %}

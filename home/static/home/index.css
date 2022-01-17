@@ -1,0 +1,22 @@
+body {
+    background-color: #001;
+    background-image: linear-gradient(rgba(0, 0, 1, 0.4), rgba(0, 0, 1, 0.3)), url("./img/earth\ at\ night.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+
+.all {
+    margin-top: 15%;
+    margin-left: 10%;
+    width: 30%;
+}
+
+.card {
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-left: 4%;
+    padding-right: 4%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 1, 0.6), rgba(0, 0, 1, 0.5));
+}

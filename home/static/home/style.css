@@ -1,0 +1,44 @@
+*, *:before, *:after {
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box;
+}
+
+* {
+    color: #ddd;
+}
+
+nav.menu {
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    font-family: Georgia;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    backdrop-filter: blur(10px);
+}
+
+nav.menu div {
+    font-variant-caps: small-caps;
+    font-size: 1.5em;
+    text-decoration: none;
+    text-align: center;
+    margin: 0.25em;
+    padding: 1em;
+}
+
+nav.menu div a {
+    text-decoration: none;
+}
+
+h1, h2 {
+    font-family: Georgia;
+    margin-bottom: 10%;
+    font-weight: lighter;
+}
+
+p {
+    font-size: 1.25rem;
+    font-family: Helvetica;
+}
